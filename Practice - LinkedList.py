@@ -101,3 +101,19 @@ linked_list.remove(3)
 assert linked_list.to_list() == [2, 1, 4, 3], f"list contents: {linked_list.to_list()}"
 linked_list.remove(3)
 assert linked_list.to_list() == [2, 1, 4], f"list contents: {linked_list.to_list()}"
+
+def pop(self):
+    """ Return the first node's value and remove it from the list. """
+    # TODO: Write function to pop here
+    current_node = self.head
+    value = current_node.value
+    self.head = current_node.next
+    return value
+
+LinkedList.pop = pop
+
+# Test pop
+value = linked_list.pop()
+assert value == 2, f"list contents: {linked_list.to_list()}"
+assert linked_list.head.value == 1, f"list contents: {linked_list.to_list()}"
+
