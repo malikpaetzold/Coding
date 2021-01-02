@@ -1,12 +1,13 @@
-def string_reverser(our_string):
-   """
-   Reverse the input string
+"""
+Reverse the input string
 
-   Args:
-      our_string(string): String to be reversed
-   Returns:
-      string: The reversed string
-   """
+Args:
+   our_string(string): String to be reversed
+Returns:
+   string: The reversed string
+"""
+
+def string_reverser(our_string):
 
    # TODO: Write your solution here
    out = ""
