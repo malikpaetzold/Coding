@@ -16,7 +16,7 @@ def duplicate_number(arr):
     """
     for i in range(len(arr)):
         temp = arr[i]
-        for j in range(i, len(arr), 1):
+        for j in range(i+1, len(arr), 1):
             if temp == arr[j]: return temp
     return None
 
@@ -28,6 +28,7 @@ def test_function(test_case):
         print("Pass")
     else:
         print("Fail")
+        print(output, solution)
 
 arr = [0, 0]
 solution = 0
