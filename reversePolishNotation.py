@@ -6,7 +6,7 @@
 # Given a postfix expression as input, evaluate and return the correct final answer.
 # Note: In Python 3, the division operator / is used to perform float division. So for this problem, you should use int() after every division to convert the answer to an integer.
 
-# linked list class from basics part
+# linked list & stack class from basics part
 
 class LinkedListNode:
     def __init__(self, data):
