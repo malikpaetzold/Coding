@@ -1,17 +1,19 @@
 # Implementation of the BubbleSort Algorithm
 
 def bubbleSort(array):
-    if len(array) < 2: return array
+    # O(n^2) time | O(1) space
     action_needed = True
+    end_complete = 1
     
     while action_needed:
         action_needed = False
         
-        for i in range(1, len(array), 1):
-            if array[i-1] > array[i]:
-                array[i-1], array[i] = array[i], array[i-1]
+        for i in range(len(array) - end_complete):
+            if array[i+1] < array[i]:
+                array[i+1], array[i] = array[i], array[i+1]
                 
                 action_needed = True
+        end_complete += 1
     
     return array
 
